@@ -1,15 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import javafx.scene.control.Button?>
-<?import javafx.scene.control.Label?>
-<?import javafx.scene.control.TextField?>
-<?import javafx.scene.image.Image?>
-<?import javafx.scene.image.ImageView?>
-<?import javafx.scene.layout.HBox?>
-<?import javafx.scene.layout.VBox?>
 <?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
-
 <VBox xmlns="http://javafx.com/javafx"
       xmlns:fx="http://javafx.com/fxml"
       fx:controller="galgje.ui.fx.GameScreenController"
@@ -22,18 +16,28 @@
         <Insets top="20" right="20" bottom="20" left="20"/>
     </padding>
 
-    <HBox spacing="5" alignment="CENTER">
-        <Label fx:id="attemptsLabel" style="-fx-font-size: 18;">
-            <font>
-                <Font size="18.0"/>
-            </font>
-        </Label>
-        <ImageView fx:id="hangmanImage" fitWidth="32" fitHeight="32" preserveRatio="true" />
-    </HBox>
+    <Label fx:id="wordLabel" prefWidth="200" prefHeight="50">
+        <font>
+            <Font size="24.0"/>
+        </font>
+        <style>
+            -fx-letter-spacing: 1;
+        </style>
+        <VBox.margin>
+            <Insets top="20"/>
+        </VBox.margin>
+    </Label>
 
-    <TextField fx:id="letterField" promptText="typ een letter" />
-    <Button fx:id="guessButton" text="raad" onAction="#guess" />
-    <Label fx:id="resultLabel" />
+    <Label fx:id="attemptsLabel" style="-fx-font-size: 18;">
+        <font>
+            <Font size="18.0"/>
+        </font>
+    </Label>
+
+
+    <TextField fx:id="letterField" promptText="typ een letter"/>
+    <Button fx:id="guessButton" text="raad" onAction="#guess"/>
+    <Label fx:id="resultLabel"/>
     <Label fx:id="error" style="-fx-text-fill: red"/>
 
     <VBox.margin>

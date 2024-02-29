@@ -11,7 +11,6 @@ import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
-import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
 import javafx.stage.Stage;
 
@@ -61,13 +60,7 @@ public class GameScreenController {
 
     private void updateFields () {
         wordLabel.setText(service.getCurrentWord());
-        setHangmanImage(valueOf(service.getAttempts()));
         attemptsLabel.setText(valueOf(service.getAttempts()));
-    }
-
-    public void setHangmanImage(String imagePath) {
-        Image image = new Image("galgje/media/" + imagePath);
-        hangmanImage.setImage(image);
     }
 
     private void setError(String errorInput) {
