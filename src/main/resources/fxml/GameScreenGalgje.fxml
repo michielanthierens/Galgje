@@ -5,7 +5,7 @@
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.layout.VBox?>
 <?import javafx.geometry.Insets?>
-<?import javafx.geometry.Pos?>
+<?import javafx.scene.text.Font?>
 
 <VBox xmlns="http://javafx.com/javafx"
       xmlns:fx="http://javafx.com/fxml"
@@ -19,11 +19,18 @@
         <Insets top="20" right="20" bottom="20" left="20"/>
     </padding>
 
-    <Label fx:id="wordLabel" />
+    <Label fx:id="wordLabel" style="-fx-spacing: 1">
+        <font>
+            <Font size="24.0"/>
+        </font>
+    </Label>
+
     <TextField fx:id="letterField" promptText="typ een letter" />
-    <Button fx:id="guessButton" text="raad" />
+    <Button fx:id="guessButton" text="raad" onAction="#guess" />
     <Label fx:id="resultLabel" />
     <Label fx:id="attemptsLabel" />
+
+    <Label fx:id="error" style="-fx-text-fill: red"/>
 
     <VBox.margin>
         <Insets top="20"/>

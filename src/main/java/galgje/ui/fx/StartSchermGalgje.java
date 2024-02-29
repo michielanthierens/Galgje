@@ -62,10 +62,10 @@ public class StartSchermGalgje {
 
     @FXML
     void startGame(ActionEvent event) {
-        if (input_txt.toString().length() > 4) {
+        if (input_txt.getText().length() > 4) {
             showGameScreen(event2stage(event));
         } else {
-            error.setText("try a longer word");
+            error.setText("het woord moet langer zijn dan 4 tekens");
         }
     }
 
@@ -84,7 +84,7 @@ public class StartSchermGalgje {
             FXMLLoader loader = new FXMLLoader(getClass().getResource("/fxml/GameScreenGalgje.fxml"));
             Parent root  = loader.load();
 
-            Game game = new Game(input_txt.toString());
+            Game game = new Game(input_txt.getText());
             GalgjeService service = new GalgjeService(game);
 
             GameScreenController controller = loader.getController();
