@@ -25,9 +25,11 @@
             <HBox spacing="10" alignment="CENTER">
                <Label fx:id="ask_input_lbl" text="Type een woord"/>
                <TextField fx:id="input_txt" prefWidth="250.0"/>
-               <Button fx:id="start_game_btn" text="Start Spel" mnemonicParsing="false" onAction="#start_game"
+               <Button fx:id="start_game_btn" text="Start Spel" mnemonicParsing="false" onAction="#startGame"
                        style="-fx-background-color: #4CAF50; -fx-text-fill: white;"/>
             </HBox>
+
+            <Label fx:id="error" style="-fx-text-fill: red"/>
 
             <VBox spacing="10" alignment="CENTER">
                <HBox spacing="10" alignment="CENTER">

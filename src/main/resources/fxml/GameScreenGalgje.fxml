@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.geometry.Insets?>
+<?import javafx.geometry.Pos?>
+
+<VBox xmlns="http://javafx.com/javafx"
+      xmlns:fx="http://javafx.com/fxml"
+      fx:controller="galgje.ui.fx.GameScreenController"
+      alignment="CENTER"
+      spacing="10"
+      prefWidth="400.0"
+      prefHeight="200.0">
+
+    <padding>
+        <Insets top="20" right="20" bottom="20" left="20"/>
+    </padding>
+
+    <Label fx:id="wordLabel" />
+    <TextField fx:id="letterField" promptText="typ een letter" />
+    <Button fx:id="guessButton" text="raad" />
+    <Label fx:id="resultLabel" />
+    <Label fx:id="attemptsLabel" />
+
+    <VBox.margin>
+        <Insets top="20"/>
+    </VBox.margin>
+</VBox>
