@@ -4,7 +4,7 @@ import galgje.domain.Game;
 
 public class GalgjeService {
 
-    private Game game;
+    private final Game game;
 
     public GalgjeService(Game game) {
         this.game = game;

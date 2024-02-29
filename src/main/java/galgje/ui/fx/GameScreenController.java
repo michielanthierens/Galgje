@@ -8,10 +8,8 @@ import javafx.fxml.FXMLLoader;
 import javafx.scene.Node;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
-import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
-import javafx.scene.image.ImageView;
 import javafx.stage.Stage;
 
 import static java.lang.String.valueOf;
@@ -20,9 +18,6 @@ public class GameScreenController {
 
     @FXML private Label wordLabel;
     @FXML private TextField letterField;
-    @FXML private Button guessButton;
-    @FXML private Label resultLabel;
-    @FXML private ImageView hangmanImage;
     @FXML private Label attemptsLabel;
     @FXML private Label error;
 

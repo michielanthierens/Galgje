@@ -41,10 +41,6 @@ public class ResultScreenController {
 
     private void showStartScreen(Stage stage) throws GalgjeException {
         try {
-            // normally you just use this oneliner to create the root, but to pass the service an additional line is needed.
-            // Parent root = FXMLLoader.load(getClass().getResource(patientFileUrl));
-
-            // these 4 lines for passing the service.
             FXMLLoader loader = new FXMLLoader(getClass().getResource("/fxml/StartScreen_Galgje.fxml"));
             Parent root  = loader.load();
 
