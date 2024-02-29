@@ -25,16 +25,12 @@ public class StartSchermGalgje {
     private static final String RULES_TEXT = "Regels van Galgje:\n" +
             "1. Een speler kiest een woord en de andere speler moet dat woord raden.\n" +
             "2. De speler heeft een beperkt aantal pogingen om het woord correct te raden.\n" +
-            "3. Voor elke foutieve poging wordt een deel van de galg getekend.\n" +
-            "4. Als de galg compleet is getekend voordat het woord is geraden, verliest de speler.\n" +
-            "5. De speler wint als het woord correct wordt geraden voordat de galg compleet is.";
+            "3. Voor elke foutieve poging verlies je een leven.\n" +
+            "4. Als de speler geen levens meer heeft is het spel voorbij.\n" +
+            "5. De speler wint als het woord correct wordt geraden voordat de levens op zijn.";
 
     @FXML
-    private Label title_lbl;
-    @FXML
     private VBox rules_box;
-    @FXML
-    private Label ask_input_lbl;
     @FXML
     private Button hide_rules_btn;
     @FXML
@@ -43,8 +39,6 @@ public class StartSchermGalgje {
     private Label rules_lbl;
     @FXML
     private Button show_rules_btn;
-    @FXML
-    private Button start_game_btn;
     @FXML
     private Label error;
 
@@ -62,10 +56,10 @@ public class StartSchermGalgje {
 
     @FXML
     void startGame(ActionEvent event) {
-        if (input_txt.getText().length() > 4) {
+        if (input_txt.getText().length() > 3) {
             showGameScreen(event2stage(event));
         } else {
-            error.setText("het woord moet langer zijn dan 4 tekens");
+            error.setText("het woord moet langer zijn dan 3 tekens");
         }
     }
 

@@ -4,7 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8686d573-2425-49f6-9e37-f610b2e8de9b" name="Changes" comment="finalizing code" />
+    <list default="true" id="8686d573-2425-49f6-9e37-f610b2e8de9b" name="Changes" comment="finalizing code">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/galgje/ui/fx/StartSchermGalgje.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/galgje/ui/fx/StartSchermGalgje.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -173,7 +176,15 @@
       <option name="project" value="LOCAL" />
       <updated>1709223030041</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="finalizing code">
+      <option name="closed" value="true" />
+      <created>1709223223529</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1709223223529</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
