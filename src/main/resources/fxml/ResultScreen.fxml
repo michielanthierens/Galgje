@@ -24,7 +24,7 @@
          <Font size="19.0" />
       </font></Label>
 
-    <Button fx:id="guessButton" onAction="#startNewGame" prefHeight="20.0" text="Nieuw spel" />
+    <Button onAction="#startNewGame" prefHeight="20.0" text="Nieuw spel" />
 
     <VBox.margin>
         <Insets top="20" />

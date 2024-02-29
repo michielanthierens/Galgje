@@ -25,7 +25,7 @@
     </Label>
 
     <TextField fx:id="letterField" promptText="typ een letter" alignment="CENTER" />
-    <Button fx:id="guessButton" onAction="#guess" text="raad" alignment="CENTER" />
+    <Button onAction="#guess" text="raad" alignment="CENTER" />
 
     <Label fx:id="attemptsLabel" prefHeight="27.0" prefWidth="142.0" style="-fx-font-size: 18;" alignment="CENTER">
         <font>

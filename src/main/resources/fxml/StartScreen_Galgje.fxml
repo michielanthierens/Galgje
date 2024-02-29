@@ -16,16 +16,16 @@
    <BorderPane VBox.vgrow="ALWAYS">
       <center>
          <VBox spacing="20" alignment="CENTER">
-            <Label fx:id="title_lbl" text="Galgje" textAlignment="CENTER" wrapText="true">
+            <Label text="Galgje" textAlignment="CENTER" wrapText="true">
                <font>
                   <Font size="36.0"/>
                </font>
             </Label>
 
             <HBox spacing="10" alignment="CENTER">
-               <Label fx:id="ask_input_lbl" text="Type een woord"/>
+               <Label text="Type een woord"/>
                <TextField fx:id="input_txt" prefWidth="250.0"/>
-               <Button fx:id="start_game_btn" text="Start Spel" mnemonicParsing="false" onAction="#startGame"
+               <Button text="Start Spel" mnemonicParsing="false" onAction="#startGame"
                        style="-fx-background-color: #4CAF50; -fx-text-fill: white;"/>
             </HBox>
 
