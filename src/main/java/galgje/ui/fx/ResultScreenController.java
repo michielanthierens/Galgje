@@ -15,6 +15,7 @@ import java.io.IOException;
 
 public class ResultScreenController {
 
+    public Label solutionlbl;
     @FXML private Label secretWordlbl;
     @FXML private Button guessButton;
     @FXML private Label resultLabel;
@@ -25,7 +26,7 @@ public class ResultScreenController {
         } else {
             resultLabel.setText("Helaas, je hebt verloren");
         }
-        secretWordlbl.setText("het geheime woord was:\n" + secretWord);
+        secretWordlbl.setText(secretWord);
 
     }
 

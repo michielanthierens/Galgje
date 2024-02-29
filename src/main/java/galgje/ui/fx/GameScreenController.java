@@ -11,6 +11,8 @@ import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
+import javafx.scene.image.Image;
+import javafx.scene.image.ImageView;
 import javafx.stage.Stage;
 
 import static java.lang.String.valueOf;
@@ -21,6 +23,7 @@ public class GameScreenController {
     @FXML private TextField letterField;
     @FXML private Button guessButton;
     @FXML private Label resultLabel;
+    @FXML private ImageView hangmanImage;
     @FXML private Label attemptsLabel;
     @FXML private Label error;
 
@@ -58,7 +61,13 @@ public class GameScreenController {
 
     private void updateFields () {
         wordLabel.setText(service.getCurrentWord());
-        attemptsLabel.setText( valueOf(service.getAttempts()));
+        setHangmanImage(valueOf(service.getAttempts()));
+        attemptsLabel.setText(valueOf(service.getAttempts()));
+    }
+
+    public void setHangmanImage(String imagePath) {
+        Image image = new Image("galgje/media/" + imagePath);
+        hangmanImage.setImage(image);
     }
 
     private void setError(String errorInput) {
@@ -85,7 +94,7 @@ public class GameScreenController {
             stage.setScene(scene);
             stage.show();
         } catch (Exception e) {
-            throw new GalgjeException("could not launch resultscreen");
+            throw new GalgjeException("could not launch result screen");
         }
     }
 }
