@@ -4,9 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8686d573-2425-49f6-9e37-f610b2e8de9b" name="Changes" comment="finalizing code">
+    <list default="true" id="8686d573-2425-49f6-9e37-f610b2e8de9b" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/galgje/ui/fx/StartSchermGalgje.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/galgje/ui/fx/StartSchermGalgje.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -135,6 +135,7 @@
       <option name="presentableId" value="Default" />
       <updated>1709199480046</updated>
       <workItem from="1709199481080" duration="14319000" />
+      <workItem from="1709315795734" duration="3490000" />
     </task>
     <task id="LOCAL-00001" summary="init, with startscreen working">
       <option name="closed" value="true" />
@@ -184,7 +185,31 @@
       <option name="project" value="LOCAL" />
       <updated>1709223223529</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="finalizing code">
+      <option name="closed" value="true" />
+      <created>1709223407118</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1709223407118</updated>
+    </task>
+    <task id="LOCAL-00008" summary="finalizing code">
+      <option name="closed" value="true" />
+      <created>1709223492548</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1709223492548</updated>
+    </task>
+    <task id="LOCAL-00009" summary="finalizing code">
+      <option name="closed" value="true" />
+      <created>1709223525186</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1709223525186</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
